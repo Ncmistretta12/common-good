@@ -1,0 +1,7 @@
+Use the following formulas to clean the data in output.csv
+
+Column D 
+=TRIM(RIGHT(C1, LEN(C1) - SEARCH(")", C1)))
+
+Column E
+=TRIM(RIGHT(C1, LEN(C1) - SEARCH(")", C1)))ß
