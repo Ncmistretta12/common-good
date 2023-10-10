@@ -4,4 +4,4 @@ Column D
 =TRIM(RIGHT(C1, LEN(C1) - SEARCH(")", C1)))
 
 Column E
-=TRIM(RIGHT(C1, LEN(C1) - SEARCH(")", C1)))ß
+=IFERROR(LEFT(D1, SEARCH("Property Data", D1) - 1), D1)
