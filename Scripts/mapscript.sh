@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Replace with your actual API key
-API_KEY="AIzaSyAwQmz4CDx0vsnFtOMVafXN35EXUEyf6Tk"
+API_KEY=""
 
 # Function to encode the address for URL
 urlencode() {
