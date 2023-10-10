@@ -1,10 +1,9 @@
 Use the following process to clean the data in output.csv
 
-1) Insert New Column as Column B
-2) In Column B, use this formula.
-=TRIM(RIGHT(C1, LEN(C1) - SEARCH(")", C1)))
+Create Columns B & C
 
+In B:
+=IFERROR(LEFT(C1, SEARCH("Property Data", C1) - 1), C1)
 
-Old Formula / Archive
-Column E
-=IFERROR(LEFT(D1, SEARCH("Property Data", D1) - 1), D1)
+In C:
+=TRIM(RIGHT(D1, LEN(D1) - SEARCH(")", D1)))
